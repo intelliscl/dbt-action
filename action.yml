@@ -8,7 +8,7 @@ inputs:
     default: "dbt run --profiles-dir ."
     required: true
   dbt_project_folder:
-    description: "dbt project folder. Defaults to ."
+    description: "dbt project folder. Defaults to ../"
     default: "."
     required: false
 outputs:
