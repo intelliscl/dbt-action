@@ -34,7 +34,7 @@ then
 elif [ -n "${DBT_TOKEN}" ]
 then
  echo trying to use DBT_TOKEN/databricks
- sed -i "s/_token_/${DBT_TOKEN}/g" ./profiles.yml
+ sed -i "s/_token_/${DBT_TOKEN}/g" ../profiles.yml
 else
   echo no tokens or credentials supplied
 fi
