@@ -26,7 +26,7 @@ then
  sed -i "s/_password_/${DBT_PASSWORD}/g" ../profiles.yml
  sed -i "s/_user_/${DBT_USER}/g" ../profiles.yml
  sed -i "s/_host_/${DBT_PASSWORD}/g" ../profiles.yml
- sed -i "s/_port_/${DBT_PORT}/g" ./profiles.yml
+ sed -i "s/_port_/${DBT_PORT}/g" ../profiles.yml
  sed -i "s/_threads_/${DBT_THREADS}/g" ../profiles.yml
  sed -i "s/_db_schema_/${DBT_DB_SCHEMA}/g" ../profiles.yml
  sed -i "s/_db_name_/${DBT_DB_NAME}/g" ../profiles.yml
