@@ -30,6 +30,7 @@ then
  sed -i "s/_threads_/${DBT_THREADS}/g" ./profiles.yml
  sed -i "s/_db_schema_/${DBT_DB_SCHEMA}/g" ./profiles.yml
  sed -i "s/_db_name_/${DBT_DB_NAME}/g" ./profiles.yml
+ sed -i "s/_type_/${CON_TYPE}/g" ./profiles.yml
 elif [ -n "${DBT_TOKEN}" ]
 then
  echo trying to use DBT_TOKEN/databricks
