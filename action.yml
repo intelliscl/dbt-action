@@ -5,7 +5,7 @@ author: "Michael Whitaker"
 inputs:
   dbt_command:
     description: "dbt command"
-    default: "dbt run --profiles-dir ."
+    default: "dbt run --profiles-dir ../"
     required: true
   dbt_project_folder:
     description: "dbt project folder. Defaults to ."
