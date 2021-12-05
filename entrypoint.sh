@@ -21,9 +21,9 @@ then
   fi
 elif [ -n "${DBT_USER}" ] && [ -n "$DBT_PASSWORD" ]
 then
- echo trying to use user/password
+ echo "trying to use user/password"
  
- echo ${CON_TYPE}
+ echo $"{CON_TYPE}"
 
  sed -i "s/_password_/${DBT_PASSWORD}/g" ../profiles.yml
  sed -i "s/_user_/${DBT_USER}/g" ../profiles.yml
