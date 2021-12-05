@@ -22,7 +22,7 @@ then
 elif [ -n "${DBT_USER}" ] && [ -n "$DBT_PASSWORD" ]
 then
  echo trying to use user/password
- sed -i "s/_user_/${DBT_USER}/g" ./datab.yml
+
  sed -i "s/_password_/${DBT_PASSWORD}/g" ../profiles.yml
  sed -i "s/_user_/${DBT_USER}/g" ../profiles.yml
  sed -i "s/_host_/${DBT_PASSWORD}/g" ../profiles.yml
@@ -30,7 +30,7 @@ then
  sed -i "s/_threads_/${DBT_THREADS}/g" ../profiles.yml
  sed -i "s/_db_schema_/${DBT_DB_SCHEMA}/g" ../profiles.yml
  sed -i "s/_db_name_/${DBT_DB_NAME}/g" ../profiles.yml
- sed -i "s/_type_/${CON_TYPE}/g" ../profiles.yml
+ sed -i "s/_con_type_/${CON_TYPE}/g" ../profiles.yml
 elif [ -n "${DBT_TOKEN}" ]
 then
  echo trying to use DBT_TOKEN/databricks
