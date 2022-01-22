@@ -1,5 +1,5 @@
 ARG DBT_VERSION=1.0.0
-FROM fishtownanalytics/dbt-postgres:${DBT_VERSION}
+FROM fishtownanalytics/dbt:${DBT_VERSION}
 RUN apt-get update && apt-get install libsasl2-dev
 
 # Need to re-declare the ARG to use its default value defined before the FROM
